@@ -144,7 +144,8 @@ const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
 emailLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const email = link.textContent.trim();
+        // Extract email from href attribute (mailto:email@example.com)
+        const email = link.getAttribute('href').replace('mailto:', '');
 
         // Copy to clipboard
         navigator.clipboard.writeText(email).then(() => {
