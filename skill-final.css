@@ -1,0 +1,66 @@
+﻿/* SKILL CARDS - FIXED VERSION */
+.skill-card {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 12px !important;
+    padding: 2rem !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) !important;
+    background: var(--glass-border) !important;
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3) !important;
+    border-color: rgba(99, 102, 241, 0.5) !important;
+}
+
+.skill-icon {
+    width: 100px !important;
+    height: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    margin-bottom: 1.5rem !important;
+    padding: 12px !important;
+}
+
+.skill-icon img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    filter: none !important;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+.skill-card p {
+    color: var(--text-secondary) !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+}
+
+.skill-bar {
+    width: 100% !important;
+    height: 8px !important;
+    background: var(--bg-tertiary) !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+}
+
+.skill-progress {
+    height: 100% !important;
+    background: var(--gradient-1) !important;
+    border-radius: 999px !important;
+    width: 0 !important;
+    transition: width 1s ease !important;
+}

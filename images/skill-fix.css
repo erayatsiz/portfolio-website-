@@ -1,0 +1,26 @@
+﻿/* Skill Card Hover Effect */
+.skill-card:hover {
+    transform: translateY(-10px);
+    background: var(--glass-border);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+}
+
+/* Fix Skill Icon - Remove gradient background, make it transparent */
+.skill-icon {
+    width: 80px !important;
+    height: 80px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.skill-icon img {
+    width: 64px !important;
+    height: 64px !important;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
